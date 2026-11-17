@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ravi-the-office-3d
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /voice/*
+        name: Cache-Control
+        value: public, max-age=604800
+      - path: /img/*
+        name: Cache-Control
+        value: public, max-age=604800
