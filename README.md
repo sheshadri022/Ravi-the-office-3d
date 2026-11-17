@@ -4,6 +4,10 @@ Interactive 3D portfolio for Ravi Kumar, Group Vice President – Finance, Miles
 
 A low-poly office inside a living city block, built with Three.js. A guided tour follows a visitor through security and reception to Ravi's cabin, then walks room by room through his career, narrated in his own voice. "Exit demo" switches to free explore mode.
 
+## Game Mode (`/game`)
+Play as the visitor: WASD / joystick, check in at reception, meet Ravi, collect 5 career milestones, finish for a time + XP score.
+Leaderboard: Supabase Edge Function `leaderboard` (project `ravi-office-game`) storing rows in `public.scores`. The function validates scores server-side, so no API key ships to the browser. Endpoint is set in `game/config.js`.
+
 ## Rooms
 01 Reception · 02 Milestone Wall · 03 Reporting Studio · 04 Automation Lab · 05 Deal Room · 06 Global Atrium · 07 Ravi's Cabin
 

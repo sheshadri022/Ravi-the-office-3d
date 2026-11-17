@@ -72,6 +72,8 @@ button{font:inherit;cursor:pointer}
 .start .b{display:flex;gap:10px;justify-content:center;margin-top:24px;flex-wrap:wrap}
 .start button{border:0;border-radius:99px;padding:13px 22px;font-weight:700;font-size:14px;background:#2f5d4a;color:#fff}
 .start button.alt{background:#fff;color:#22302a;border:1px solid #d8d3c6}
+.start a.gm{border-radius:99px;padding:13px 22px;font-weight:700;font-size:14px;background:#c9a77c;color:#1d2a24;text-decoration:none;display:inline-block}
+.top a.gtop{letter-spacing:0;font-size:11.5px;font-weight:700;color:#fff;background:#2f5d4a;border-radius:99px;padding:5px 11px;text-decoration:none}
 .start .s{font-size:11.5px;color:#9a9486;margin-top:14px}
 .start .load{font-size:12px;color:#8a7a5a;margin-top:10px}
 .lbl{position:fixed;z-index:9;transform:translate(-50%,-100%);pointer-events:none;font-size:11px;font-weight:700;color:#fff;background:#2f5d4a;padding:3px 8px;border-radius:99px;white-space:nowrap;opacity:0;transition:opacity .3s}
@@ -84,14 +86,14 @@ button{font:inherit;cursor:pointer}
 <body>
 <canvas id="gl"></canvas>
 <div class="top card"><div class="logo">RK</div><b>THE OFFICE</b><span class="n">/ RAVI KUMAR</span>
- <div class="r"><span class="t"><span class="dot"></span>INTERACTIVE OFFICE</span><span>Quality</span><select id="q"><option value="high">High</option><option value="low">Low</option></select></div></div>
+ <div class="r"><a class="gtop" href="game/">🎮 Game mode</a><span class="t"><span class="dot"></span>INTERACTIVE OFFICE</span><span>Quality</span><select id="q"><option value="high">High</option><option value="low">Low</option></select></div></div>
 <nav class="side card" id="side"></nav>
 <div class="cap card" id="cap"><h2 id="capT">Welcome to the office</h2><p id="capS">From the first impression to every room inside.</p></div>
 <div class="panel"><div class="cc card" id="cc"></div><div class="dlg card" id="dlg"><div class="who" id="who"></div><div class="tx" id="tx"></div><div class="wave"><i></i><i></i><i></i><i></i><i></i></div><div class="acts" id="acts"></div></div></div>
 <div class="ctl"><button id="bPause">Pause</button><button id="bExit">Exit demo</button></div>
 <div class="hint" id="hint">Drag to rotate · scroll to zoom · right-drag to pan · pick a room on the left</div>
 <div class="lbl" id="lblRavi">Ravi Kumar</div><div class="lbl" id="lblYou" style="background:#6f9fc9">You</div>
-<div class="start" id="start"><div class="box"><div class="k">AN INTERACTIVE 3D PORTFOLIO</div><h1>Ravi Kumar<br>The Office</h1><p>Walk in through security, ask for Ravi at reception, and let him show you around. Every room is a chapter of his fifteen years in finance.</p><div class="b"><button id="go">Start the tour ▶</button><button class="alt" id="free">Explore freely</button></div><div class="s">Sound on · about 4 minutes · you can pause or exit anytime</div><div class="load" id="load">Building the city…</div></div></div>
+<div class="start" id="start"><div class="box"><div class="k">AN INTERACTIVE 3D PORTFOLIO</div><h1>Ravi Kumar<br>The Office</h1><p>Walk in through security, ask for Ravi at reception, and let him show you around. Every room is a chapter of his fifteen years in finance.</p><div class="b"><button id="go">Start the tour ▶</button><button class="alt" id="free">Explore freely</button><a class="gm" href="game/">🎮 Play as a game</a></div><div class="s">Sound on · about 4 minutes · you can pause or exit anytime</div><div class="load" id="load">Building the city…</div></div></div>
 
 <script>
 /* ================= DATA ================= */
